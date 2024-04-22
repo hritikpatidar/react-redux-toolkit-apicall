@@ -5,12 +5,12 @@ import { apiAsync } from '../textApi/CounterSlice'
 export default function Counter() {
     const state = useSelector(state => state.counters.data);
     const dispatch = useDispatch();
-    console.log("countwe",state)
+    console.log("countwe", state)
     return (
         <div>
-            <button type='button' onClick={()=>{dispatch(apiAsync())}}>click me</button>
+            <button type='button' onClick={() => { dispatch(apiAsync()) }}>click me</button>
             {
-                state.map((cv,index,arr)=>{
+                state.map((cv, index, arr) => {
                     return (
                         <div key={index}>
                             <h1>{cv.userId}{cv.id}{cv.title}</h1>

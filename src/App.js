@@ -5,9 +5,9 @@ import Counter from './textApi/Counter';
 function App() {
   return (
     <div className="App">
-      
-        <Counter />
-       
+
+      <Counter />
+
     </div>
   );
 }
